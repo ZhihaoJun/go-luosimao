@@ -8,7 +8,7 @@ import (
 
 func TestSendJSON(t *testing.T) {
     luosimao := NewLuosimao("")
-    resp, err := luosimao.SendSMSJSON("18502710852", "hello,wolrd", "【luosimao】")
+    resp, err := luosimao.SendSMSJSON("", "hello,wolrd", "【luosimao】")
     if err != nil {
         log.Fatalln(err)
     }
